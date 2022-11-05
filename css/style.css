@@ -1,0 +1,12 @@
+/* :root {
+    --primary-color 
+    --secondary-color
+
+    --font-color
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

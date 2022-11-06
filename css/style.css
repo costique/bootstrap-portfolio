@@ -161,12 +161,18 @@ h4 {
 
 /* PROJECTS */
 
+.card-body,
+.card {
+  background-color: #000;
+  border-color: #000;
+}
+
 .projects_wrapper .h2,
 h2 {
   font-size: 3.5rem;
 }
 
-.containerp {
+.projects {
   padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

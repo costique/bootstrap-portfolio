@@ -1,12 +1,113 @@
-/* :root {
-    --primary-color 
-    --secondary-color
+/* --TABLE OF CONTENTS-- */
+/* 1.NAVBAR */
+/* 2.HERO */
+/* 3.ABOUT */
+/* 4.PROJECTS */
+/* 5.CONTACT */
+/* --------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-    --font-color
-} */
+:root {
+  --primary-color: hsl(317 100% 54%);
+
+  --font-color: #fff;
+  --font-family: "Roboto", sans-serif;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body {
+  width: 100%;
+  background-repeat: no-repeat;
+  background: #0a0a0a 100%;
+  font-family: var(--font-family);
+  color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #212121;
+}
+
+/* NAVBAR */
+
+a .nav-link {
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--font-color) !important;
+}
+
+a .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* HERO */
+.jumbotron {
+  background-color: #0a0a0a;
+}
+
+.humbotron .h2,
+h2 {
+  font-size: 3rem;
+}
+
+.humbotron .h1,
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.humbotron .h4,
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 2em;
+  text-decoration: none !important;
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+
+.main-btn:hover {
+  color: var(--primary-color);
+}
+
+/* ABOUT */

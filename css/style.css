@@ -138,10 +138,6 @@ h4 {
   font-size: 1.4rem;
 }
 
-#about {
-  padding-bottom: 250px;
-}
-
 .about_wrapper .single-logo-item {
   width: 100%;
   height: 6.875rem;
@@ -155,6 +151,7 @@ h4 {
   background: #000;
   position: relative;
   margin-top: 1.5rem;
+  padding-bottom: 250px;
 }
 
 /* 5 portfolio */

@@ -50,6 +50,10 @@ header {
 
 /* NAVBAR */
 
+.navbar {
+  padding: 0.5rem 0;
+}
+
 a .nav-link {
   justify-content: center;
   align-items: center;
@@ -122,6 +126,7 @@ h4 {
 
 .main-btn:hover {
   color: var(--primary-color);
+  box-shadow: 5px 5px 5px 5px #000;
 }
 
 /* ABOUT */
@@ -149,6 +154,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about_wrapper {
@@ -167,22 +173,40 @@ h4 {
   border-color: #000;
 }
 
-.projects_wrapper .h2,
-h2 {
+.projects_wrapper h2 {
   font-size: 3.5rem;
+  text-align: center;
+}
+
+.horiseon {
+  height: 213px !important;
+}
+
+.horiseonb {
+  height: 194px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-img-top:hover {
+  color: rgba(0, 0, 0, 1);
 }
 
 .projects {
+  max-width: fit-content;
+  margin: auto;
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "Project1 Project2 Project3"
-    "Project4 Project5 Project6"
-    ". . .";
+    "Project4 Project5 Project6";
 }
 
 .Project1 {
@@ -257,3 +281,112 @@ footer h2 {
 }
 
 /* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+  .projects {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Project1 Project2"
+      "Project4 Project5"
+      "Project3 Project6";
+  }
+
+  .card {
+    width: 20rem !important;
+  }
+
+  .section {
+    padding: 5rem 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .card {
+    width: 20rem !important;
+    width: 100%;
+  }
+
+  .card-img-top {
+    width: 100% !important;
+  }
+
+  .projects {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Project1"
+      "Project2"
+      "Project4"
+      "Project5"
+      "Project3"
+      "Project6";
+  }
+
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    font-size: 2rem;
+  }
+
+  footer h2 {
+    font-size: 3rem;
+  }
+
+  .projects_wrapper h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .jumbotron .h1,
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .jumbotron .h2,
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .jumbotron .h4,
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email {
+    font-size: 1.3rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .about p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
